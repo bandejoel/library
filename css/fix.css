@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(238, 150, 9);
+}
+.logs{
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px;
+    padding: 20px;
+    background-color: gray;
+}
+form{
+    
+}
+ 
+form input{
+    border: none;
+    border-bottom: 2px 10px solid rgb(112, 107, 107);
+    width: 70%;
+}
+form input::placeholder{
+    color: thistle;
+    text-align: center;
+}
+#loginbtn{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 3px;
+}
+.text1{
+    border-left: 5px gray;
+}

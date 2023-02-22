@@ -1,0 +1,106 @@
+
+.container.Navbar{
+  margin-top: 30px;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+ 
+}
+.Navbar {
+    background-color: white;
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: #006600;
+  }
+  
+  .Navbar__Link {
+    padding-right: 8px;
+  }
+
+  
+ 
+  
+  .Navbar__Items {
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: larger;
+    transition: all 0.5s ease;
+  }
+
+  .container nav ul.sub-nav{
+    visibility: hidden;
+    opacity: 0; 
+    position: absolute;
+    background-color: white;
+    padding-top: 15px;
+    width: 200px;
+    height: 180px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14) ;
+    top: 75px;
+    left: 0;
+}
+
+
+
+  .container nav :hover ul.sub-nav{
+    visibility: visible;
+    opacity: 1;  
+    margin-top: -35px;
+    transition: all 0.5s ease;
+    list-style: none;
+  
+  }
+ 
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  .bi.bi-link {
+    width: 50px;
+    height: 50px;
+  }
+
+  img {
+      width: 180px;
+      height: 100px;
+  }
+ 
+
+  @media only screen and (max-width: 1200px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+    #navbarDropdown {
+      margin-left: 24px;
+    }  
+
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self:center;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+     } 
+     
+#library-logo {
+    margin-top: -100px;
+    margin-left: auto;
+ 
+}
+
+  }

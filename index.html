@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="library navbar.css">
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- =================== Bootstrap ==================== -->
     <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
@@ -19,11 +21,56 @@
     
 </head>
 <body>
+  <div class="container-fluid" style="background-color: #f5f5f5; padding-bottom: 150px;">
+    <div class="container Navbar " >
+      <div class="Navbar__Link Navbar__Link-brand">
+<img src="images/BCClogo-removebg-preview.png" alt="">         </div>
+       <div class="Navbar__Link Navbar__Link-toggle">
+        <span class='bi bi-justify' ></span>      
+         </div>
+        
+     <nav class="Navbar__Items ">
+       <div class="Navbar__Link">
+          <a class="nav-link active ms-4 "  id="list-items" aria-current="page" href="login.html"  >Books</a>
+      </div>
+
+       <div class="Navbar__Link dropdown">
+          <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse
+            </a>  
+            <ul class="sub-nav">
+              <li>                <a  href="#">Subject</a>                </li>
+              <li>                 <a href="#">Trending</a>                </li>
+              <li>                 <a  href="#">Random Books</a>                </li>
+              <div class="dropdown-divider"></div>
+              <li>                 <a href="#">Advanced search</a>                </li>
+
+            </ul>
+      
+          </div>
+
+          <div class="Navbar__Link">
+            <a class="nav-link active ms-4 "  id="list-items" aria-current="page" href="login.html" >contact us</a>
+        </div>
+  
+       <div class="Navbar__Link">
+          <a class="nav-link active ms-4 "  id="list-items" aria-current="page" href="login.html"  >log in</a>
+      </div>
+      <div class="Navbar__Link">
+          <a class="nav-link active ms-4 "  id="list-items" aria-current="page" href="login.html"  >sign up</a>
+      </div>
+     </nav>
+
+     <div class="Navbar__Link Navbar__Link-brand" id="library-logo">
+<img src="images/logoGRYellow-removebg-preview.png" alt="">      </div>
+   </div>
+
+  </div>
     <section>
         <div class="card"  style="height: 1000px; background-color: #f5f5f5;">
             <div class="card-img-overlay">
-                <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
-                    <div class="container" style="padding-top: 5px; padding-bottom: 15px;">
+                <!-- <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top " style="background-color: white;">
+                    <div class="container" style="padding-top: 5px;  ">
 
                       <div class="col-2">
                         <a class="navbar-brand  text-light py-3 " href="#">
@@ -44,7 +91,7 @@
                         <div class="collapse navbar-collapse " id="navbarContent">
                             <ul class="nav navbar-nav  mb-2 mb-lg-0 ">
                                 <li class="nav-item px-2 ">
-                                  <a class="nav-link active ms-4 "  id="list-items" aria-current="page" href="#"  >My Books</a>
+                                  <a class="nav-link active ms-4 "  id="list-items" aria-current="page" href="login.html"  >My Books</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle"  id="list-items" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,7 +101,6 @@
                                     <a class="dropdown-item" href="#">Subject</a>
                                     <a class="dropdown-item" href="#">Trending</a>
                                     <a class="dropdown-item" href="#">Random Books</a>
-                                    <a class="dropdown-item" href="#">Trending</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Advanced search</a>
                                   </div>
@@ -68,11 +114,13 @@
                                
                                 </li>
                                 <li class="nav-item px-2" >
-                                    <a  id="list-items" class="nav-link active " href="exercise3-page3.html">Log In</a>
+                                    <a  id="list-items" class="nav-link active " href="login.html">Log In</a>
                                 </li>
                                 <li class="nav-item px-2" >
+                                   <a href="signup.html">
                                     <button class="btn btn-outline px-3"  style=" color:rgb(255, 255, 255); background-color: #1360d3;"
                                     type="submit">SIGN UP</button> 
+                                   </a>
                                 </li>
                             </ul>
                         </div>
@@ -84,7 +132,9 @@
                         
                     </div>
         
-                </nav>
+                </nav> -->
+
+          
                 
                <div class="container">
                 <h3 class="welcome">Welcome to the municipal library of the Bamenda city council</h3>
@@ -155,8 +205,10 @@
 
         </div>
     </section>
+
  
     
+    <script src="library nav-bar.js"></script>
     <!--carousel links-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
