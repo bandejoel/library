@@ -1,0 +1,82 @@
+body{
+ margin: 0px;
+}
+
+/* .nav-link{
+    color: green;
+    text-transform: capitalize;
+} */
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+}
+
+  .contact-us {
+    margin-top: -100px;
+    position: absolute;
+    color: #006600; 
+    font-size: 50px; 
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+#icons-footer{
+     width: 50px;
+     height: 40px;
+     margin-top: 20px;
+}
+.footer-element h6  {
+    color: #ffff;
+    width: 10px;
+    height: 5px;
+    background-color: yellow;
+    border: 1px solid white;
+}
+
+/* whatsapp float */
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:50px;
+	right:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        right: 30px;
+        font-size: 22px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MUNICIPAL LIBRARY BCC</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="css/library navbar.css">
+    <link rel="stylesheet" href="css/user-dashboard.css">
+
+    <!-- =================== Bootstrap ==================== -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+
+    <!-- pills links -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body >
+
+    <div class="container-fluid d-block" >
+
+    <div class="container-fluid " >
+      <div class="available-books col-10 ">
+        <h1 >available books</h1>
+      <p>"Read a lot. Expect something big, something exalting or deepening from a book. No book is worth reading that isn't worth re-reading." – Susan Sontag</p>
+  
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+  
+          <ul class="nav nav-pills" >
+            <li class=" btn active"><a data-toggle="pill" class="nav-link" href="#All-books">All books</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#computer-science">computer science</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#philosophy" >philosophy and <br/> psychology</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#religion">religion</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#science">science</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#arts">arts and <br/> recreation</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#literature">literature</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#history">history and <br/> geography</a></li>
+            <li class="btn "><a data-toggle="pill" class="nav-link" href="#business">business</a></li>
+          </ul>
+        </div>
+  
+  
+  
+  
+        <div class="book-div col-md-9 col-sm-12" >
+                <div class="row d-flex">
+                  <div class="col-12">
+                    <div class="main">
+                      <input type="text" name="Search" placeholder="Search book...">
+                      <button>SEARCH</button>
+                    </div>
+                  </div>
+  
+                    <div class="tab-content">
+                      <div id="All-books" class="tab-pane d-flex  active">
+                        <div class="tab-element col-md-3 col-sm-4 col-xs-6" id="book" >
+                          <div class="col-12">
+                            <p  id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book" >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p  id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book" >reserve book</button>     
+                          </div>
+                        </div>
+
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p  id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book" >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p  id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book" >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p  id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book" >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 02 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book1.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div id="computer-science" class="tab-pane d-flex fade out">
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6"  id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+  
+                        <div class=" col-md-3 col-sm-4 col-xs-6" id="book">
+                          <div class="col-12">
+                            <p id="shelf-number" class="container-fluid"> shelf number: 01 </p>
+                          </div>
+                          <div class="col-12">
+                            <img src="images/book2.PNG" class="card-image" alt="books-image" >
+                          </div>
+                          <div class="col-12">
+                            <button id="reserve-book"  >reserve book</button>     
+                          </div>
+                        </div>
+                      </div>
+                    </div>         
+                </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+   
+
+    <!-- <section style="background-color:#111311;">
+      <div class="container"  >
+          <div class="row d-lg-flex d-sm-block ">
+              <div class="col-lg-3 col-md-4 ">
+                  <img src="images/logoGRYellow-removebg-preview.png" style="height: 100px; width: 160px; margin-top: 50px;" alt="">
+              </div>
+              <div class=" col-xl-3 col-lg-4 py-5 d-lg-block d-none  " style="color: white;" >
+                  <a href="index.html"  style="color: white;"><h6>home</h6></a>
+                  <a href=""  style="color: white;"><h6>about</h6></a>
+                  <a href=""  style="color: white;"><h6>services</h6></a>
+                  <a href="contact.html"  style="color: white;"><h6>contact</h6></a>
+              </div>
+              <div class="col-xl-3 col-lg-4 py-5 d-lg-block d-none " style="color: white;">
+                <a href="LMD/signuplog.html"  style="color: white;"><h6>register</h6></a>
+                <a href="LMD/userlog.html"  style="color: white;"><h6>log in</h6></a>
+                <a href=""  style="color: white;"><h6>policy</h6></a>
+              </div>
+              <div class="col d-lg-none d-block py-5" style="color: white; ">
+                <a href="index.html"  style="color: white;"><h6>home</h6></a>
+                <a href=""  style="color: white;"><h6>about</h6></a>
+                <a href=""  style="color: white;"><h6>services</h6></a>
+                <a href="contact.html"  style="color: white;"><h6>contact</h6></a>
+                <a href="LMD/signuplog.html"  style="color: white;"><h6>register</h6></a>
+                <a href="LMD/userlog.html"  style="color: white;"><h6>log in</h6></a>
+                <a href=""  style="color: white;"><h6>policy</h6></a>
+              </div>
+              <div class="col-xl-3 col-lg-10 d-xl-block d-sm-none  ">
+
+
+                  <div class="container-blog mx-2 " style="margin-top: 45px;">
+                      <p style="color: white;">Follow us on social media</p>
+                      <i class="bi-file-youtube mx-1 " style="color: white;"></i> 
+                      <i class="bi bi-facebook mx-1" style="color: white;"></i>
+                      <i class="bi bi-instagram mx-1" style="color: white;"></i>
+                      <i class="bi bi-twitter mx-1" style="color: white;"></i> 
+                      <i class="bi bi-youtube mx-1" style="color: white;"></i> 
+
+                    </div>
+                  <p style="margin-top:20px;color: white;">join our newsletter</p>
+                  <form id="last-button" action="">
+                      <input type="text" placeholder="email">
+                      <button style="color: white; background-color:#F0c800;text-transform: uppercase;margin-bottom: 20px;">join
+                          now</button>
+                  </form>
+              </div>
+
+              <div class="col-lg-10 d-xl-none d-sm-block d-none  py-4 d-flex  ">
+                  <div class="container-blog mx-2 " style="margin-top: 45px;">
+                      <p>Follow us on social media</p>
+                      <i class="bi-file-youtube mx-1 " style="color: white;"></i> 
+                      <i class="bi bi-facebook mx-1" style="color: white;"></i>
+                      <i class="bi bi-instagram mx-1" style="color: white;"></i>
+                      <i class="bi bi-twitter mx-1" style="color: white;"></i> 
+                      <i class="bi bi-youtube mx-1" style="color: white;"></i> 
+
+                    </div>
+                  <div class="col mx-auto">
+                      <p style="color: white;">join our newsletter</p>
+                      <form id="last-button" action="">
+                          <input type="text" style="width: 80%;" placeholder="email">
+                          <button
+                              style="color: white; width:100px; background-color:#F0c800;text-transform: uppercase;">join
+                              now</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section> -->
+    <script src="js/library nav-bar.js"></script>
+</body>
+</html>

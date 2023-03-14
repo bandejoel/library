@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins' , sans-serif;
+    font-size: 14px;
+    background: #e0dfdf;
+    /* background-image: url(../images/mybooks.PNG); */
+    background-size: cover;
+    color: #262626;
+}
+.inputs{
+    border-color: black;
+    background-color: rgba(246, 244, 248);
+}
+.inputs::placeholder{
+    color: black;
+}
+.row{
+    /* background: rgb(241, 241, 241); */
+    background: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+    /*background-color: white;
+    */-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+h1{
+    color: rgb(60, 59, 59);
+}
+.login-container{
+    /* height: 120vh; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.login-form{
+    max-width: 100%;
+    width: 370px;
+    padding: 15px;
+    margin: auto;
+}
+.login-container{
+    box-sizing: 3px solid black;
+    margin-top: 140px;
+    margin-bottom: 140px;
+
+}
+.form-control{
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+    background-color: rgba(146, 146, 147, 0.754);;
+
+}
+.form-control:hover{
+    background-color: #262626 ;
+    color: white;
+}
+.form-control::placeholder{
+    color: #262626;
+}
+.form-control:focus{
+    border-color: #15d776;
+    box-shadow: 0 0 0 0.2rem rgba(61, 237, 79, 0.25);
+}
+.forgot-link{
+    font-size: 13px;
+}
+.btn-custom{
+    background: black;
+    border-color:  black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+}
+.btn-custom:hover{
+    background: white;
+    color: black;
+}
+img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+}
+@media screen and (max-width: 988px) {
+    img{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    
+}
+.homeicon{
+    float: right;
+    color: black;
+}
+/* .login-form a{
+    text-decoration: none;
+    color: #666;
+}
+.login-form a:hover{
+    color: #723dbe;
+} */

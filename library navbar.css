@@ -2,6 +2,8 @@
 .container.Navbar{
   margin-top: 30px;
     box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
  
 }
 .Navbar {
@@ -51,6 +53,7 @@
     margin-top: -35px;
     transition: all 0.5s ease;
     list-style: none;
+    z-index: 50;
   
   }
  

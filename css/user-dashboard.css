@@ -1,0 +1,150 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.available-books {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.available-books h1{
+    color: #006600;
+    margin-top: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.available-books p {
+    font-size: 20px;
+}
+
+
+.container h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 100%;
+    text-transform: uppercase;
+    /* font-weight: 20px; */
+    font-size: 12px;
+    margin-top: 7px;
+    overflow-wrap: break-word;
+}
+
+.nav-pills .nav-link, .nav-pills .show > .nav-link {
+    background-color: #006600 !important;
+    color: #fff !important;
+    /* font-size: 16px !important; */
+}
+
+/* search box css */
+.main{
+    margin: auto;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+.main input,button{
+    width:75%;
+    border:2px solid #006600;
+    border-right:0px;
+    font-size: 18px;
+    padding:12px;
+    background-color: white;
+    color:black;
+    height: 50px !important;
+
+}
+.main input:hover{
+    opacity: .8;
+}
+.main button{
+    width:25%;
+    background-color: #006600;
+    color: white;
+    transition: all 0.3s;
+    float: right;
+    border-left:0px;
+}
+.main button:hover{
+    opacity: .8;
+}
+
+/* card css */
+
+#shelf-number {
+    width: 100%; 
+    background-color: #343534;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px
+}
+
+#reserve-book {
+    width: 100%;
+    background-color: #006600;
+    color: #fff;
+    padding: 5px;
+    text-transform: capitalize;
+    font-weight: 20px;
+    font-size: 20px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px
+}
+
+.card-image {
+    width: 100%; 
+    height: 200px; 
+    margin-top: -10px;
+}
+
+#book {
+    margin-top: 10px;
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+/* motion effect on tab element */
+.tab-content {
+  
+    animation-name: left-slide;
+    animation-duration: 1s;
+
+  }
+
+
+@keyframes left-slide {
+    from {margin-left: -200px;}
+    to {margin-right: 0px;}
+  }
+
+  @media only screen and (max-width: 411px) {
+    #book {
+        width: 90%;
+  }
+
+  
+  }
+
+  @media only screen and (max-width: 281px) {
+
+    .available-books h1{
+        font-size: 20px;
+    }
+
+    .main button{
+        font-size: x-small;
+    }
+  
+}

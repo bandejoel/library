@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donate</title>
+        <link rel="stylesheet" href="css/main.css">
+    
+        <link rel="icon" href="image/favicon.ico" type="image/png" sizes="16x16">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link href="css/business-frontpage.css" rel="stylesheet">
+    
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+    </head>
+<body style="background-color: #f6f6f6;">
+    
+    <main>
+        <div class="row main mx-1 ">
+            <div class="col my-auto text-center align-middle">
+                <h1 class=" text-white my my-auto border ">DONATE</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-3 mb-2">
+            <div class="col-md-6 col-sm-12 p-5">
+                <div class="bg-white text-center p-4 bg-white rounded-3 shadow">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-money fa-stack-4 fa-1x text-center"></i>
+                    </span>
+                    <p class="h4">Give Money</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores laboriosam eligendi eius saepe velit?
+                    </p>
+                        <button type="button" class="p-1 rounded-3" data-bs-toggle="modal" data-bs-target="#donateMoneyModal" >Donate Money</button>  
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-5">
+                <div class="bg-white  text-center p-4 rounded-3 shadow">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-book fa-stack-1 "></i>
+                    </span>
+                    <h4>Give a Book</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui non quas culpa quibusdam illo in!</p>
+                        <button class="p-1 rounded-3" data-bs-toggle="modal" data-bs-target="#donateBookModal">Donate A Book</button>
+                    <!-- <button>
+                        <a href="">Donate A Book</a>
+                    </button> -->
+                </div>
+            </div>
+            <!-- <div class="col-md-3 bg-dark">
+                fff
+            </div>
+            <div class="col-md-3"></div> -->
+            </div> 
+        </div>
+        <div>
+            <!-- modal for money donation -->
+            <div class="modal fade" id="donateMoneyModal" tabindex="-1" role="dialog" aria-labelledby="donateMoneyModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="donateMoneyModalTitle">Donate Now</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-label="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="h6 text-center">
+                                Fill in the form to make a donation.
+                            </p>
+                            <!-- <span class="h6"> Fill in the form to make a donation.</span> -->
+                                 <form>
+                                     <div class="">
+                                      <label for="name" class="col-form-label">Name:</label>
+                                      <input type="text" class="form-control" id="recipient-name" required>
+                                     </div>
+                                     <div class="">
+                                        <label for="email" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="">
+                                        <label for="address" class="col-form-label">Address:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                     <div class="">
+                                      <label for="message-text" class="col-form-label ">Message:</label>
+                                      <textarea class="form-control" id="message-text"></textarea>
+                                     </div> 
+                                     <div>
+                                        <label for="amount" class="col-form-label">Select Or Fill In A Custom Amount(XAF)</label>
+                                        <div class="row   ">
+                                            <div>
+                                            <input id="btn1" type="button" onclick=" display()" class="btn btn-light border mx-2 mb-2" value="500" >
+                                            <input id="btn2" type="button" onclick=" display2()" class="btn btn-light border mx-2 mb-2" value="1,000">
+                                            <input id="btn3" type="button" onclick=" display3()" class="btn btn-light border mx-2 mb-2" value="2,000"> 
+                                            <input id="btn4" type="button" onclick=" display4()" class="btn btn-light border mx-2 mb-2" value="5,000">
+                                            <input id="btn5" type="button" onclick=" display5()" class="btn btn-light border mx-2 mb-2" value="10,000">
+                                             <!-- <input type="button" onclick=" display()" id="btn1" class="btn btn-light border" value="10,000">  -->
+                                            <div>
+                                                <input type="number" name="" class="form-control mt-1" id="Custom" placeholder="Custom Amount">
+                                            </div>
+                                            <div class="text-center">
+                                                <h4 class="h4 text-center text-decoration-underline">Amount</h4>
+                                                <span id="result"  class="h5 text-bold  "></span>XAF
+                                            </div>
+                                            </div>
+                                            
+                                            
+                                        <!-- <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                                            <button type="button" class="btn border mx-2 ms-auto">500</button>
+                                            <button type="button" class="btn btn-light border">1000</button>
+                                            <button type="button" class="btn btn-light border">2000</button>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6" >
+                                            <button type="button" class="btn btn-light border">5000</button>
+                                            <button type="button" class="btn btn-light border">10000</button>
+                                            <input type="number" name="" class="form-control" id="" placeholder="Custom">
+                                        </div> -->
+                                        <!-- <div class="col-md-3 col-sm-6 col-xs-6">ii</div>
+                                        <div class="col-md-3 col-sm-6 col-xs-6">lll</div> -->
+                                        </div>
+                                        <div>
+                                            <label for="payementMethod" class="col-form-label">Select Payement Method</label><br>
+                                             <button type="button" class="btn  border mx-2 mb-2 bg-warning text-white">MTN Momo</button>
+                                        </div>
+
+                                        
+                                     </div>
+                                  </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Donate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal for book donation -->
+            <div class="modal fade" id="donateBookModal" tabindex="-1" role="dialog" aria-labelledby="donateBookModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="donateBookModalTitle">Donate book</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-label="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="h6 text-center">
+                                Fill in the form to make a donation.
+                            </p>
+                                <form>
+                                    <div class="">
+                                        <label for="name" class="col-form-label">Name:</label>
+                                        <input type="text" class="form-control" id="recipient-name" required>
+                                       </div>
+                                       <div class="">
+                                          <label for="email" class="col-form-label">Email:</label>
+                                          <input type="email" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="">
+                                          <label for="address" class="col-form-label">Address:</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                       <div class="">
+                                        <label for="message-text" class="col-form-label ">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                       </div> 
+                                    </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</html>
