@@ -100,5 +100,6 @@
   
 }
 .carousel-caption h3{
-  color:#006600;
+  color:#F0c800;
+  text-transform: capitalize;
 }
